@@ -1,4 +1,4 @@
-baseURL = 'https://devkom-no.github.io'
+baseURL = 'https://blog.devkom.no'
 languageCode = 'en-us'
 title = 'DevKom Blog'
 theme = 'm10c'
