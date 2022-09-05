@@ -1,6 +1,6 @@
 baseURL = 'https://blog.devkom.no'
 languageCode = 'en-us'
-title = 'DevKom Blog'
+title = 'Devkom Blog'
 theme = 'm10c'
 [params]
   author = "Eduardo Pozo"
@@ -10,3 +10,11 @@ theme = 'm10c'
     icon = "github"
     name = "GitHub"
     url = "https://github.com/eduardopozo"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/eduardopozo"
+  [[params.social]]
+    icon = "linkedin"
+    name = "Linedin"
+    url = "www.linkedin.com/in/edudppaz"
