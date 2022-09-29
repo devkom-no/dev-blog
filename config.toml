@@ -1,6 +1,7 @@
 baseURL = 'https://blog.devkom.no'
 languageCode = 'en-us'
-title = 'Devkom Blog'
+title = 'devkom blog'
+avatar = 'static/avatar.jpg'
 theme = 'm10c'
 [params]
   author = "Eduardo Pozo"
