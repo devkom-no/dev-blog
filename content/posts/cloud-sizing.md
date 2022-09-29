@@ -1,7 +1,7 @@
 ---
 title: "Cloud Sizing"
 date: 2022-09-29T19:33:55+02:00
-draft: true
+draft: false
 ---
 Some days ago, based on a question from a customer and as a way to "dust off" my python skills, i started writing a quick script/tool that fetches the assigned public ips from the major cloud providers (AWS, GCP, Azure) and converts it to other formats ready to be pushed to network infrastructure (Firewalls, ACLs, LBs, Routers, BGP injection, etc).
 
