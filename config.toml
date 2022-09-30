@@ -2,11 +2,17 @@ baseURL = 'https://blog.devkom.no'
 languageCode = 'en-us'
 title = 'devkom blog'
 avatar = 'static/avatar.jpg'
-theme = 'm10c'
+theme = 'archie'
+paginate=5
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 [params]
   author = "Eduardo Pozo"
   description = "A blog about network and automation"
-
+  mode="dark" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
   [[params.social]]
     icon = "github"
     name = "GitHub"
@@ -18,4 +24,4 @@ theme = 'm10c'
   [[params.social]]
     icon = "linkedin"
     name = "Linedin"
-    url = "www.linkedin.com/in/edudppaz"
+    url = "https://linkedin.com/in/edudppaz"
