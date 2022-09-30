@@ -81,7 +81,7 @@ While doing this, and inspired from a &ldquo;100M AWS IPv4 addressess&rdquo; num
 </span></span><span style=display:flex><span>goog_list <span style=color:#f92672>=</span> fetchGOOG(f)
 </span></span><span style=display:flex><span>aws_list <span style=color:#f92672>=</span> fetchAWS(f)
 </span></span><span style=display:flex><span>azure_list <span style=color:#f92672>=</span> fetchAzure(f)
-</span></span></code></pre></div><p>So now, the subnets are on lists. But we want to know the total number of ip addresses on each subnet, so lets the ipaddress python module, specifically the num_address method for the IPvXNetwork classes.</p><p>From the <a href=https://docs.python.org/3/library/ipaddress.html>documentation</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>ipaddress provides the capabilities to create, manipulate and operate on IPv4 and IPv6 addresses and networks.&#34;
+</span></span></code></pre></div><p>So now, the subnets are on lists. But we want to know the total number of ip addresses on each subnet, so lets use the ipaddress python module, specifically the num_address method for the IPv(4/6)Network classes.</p><p>From the <a href=https://docs.python.org/3/library/ipaddress.html>documentation</a></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>ipaddress provides the capabilities to create, manipulate and operate on IPv4 and IPv6 addresses and networks.&#34;
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>Network objects
 </span></span><span style=display:flex><span>
@@ -120,7 +120,8 @@ While doing this, and inspired from a &ldquo;100M AWS IPv4 addressess&rdquo; num
 </span></span><span style=display:flex><span>Total Azure addresses: 60,135,143
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span> Total cloud: 227,473,883
-</span></span></code></pre></div><p>This means, that based on IPv4 usage the sizing would be: AWS>Azure>GOOG. Which is a surprise for me, as i never imagined that Azure would be &ldquo;bigger&rdquo; than Google core + GCP combined! Maybe Google is more heavy on IPv6 ?</p><p>Talking about IPv6, what are the ipv6 numbers? using the same script, and modifying the filtering, we get:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>Number of GCP addresses: 716,893,011,031,475,100,600,762,368
+</span></span></code></pre></div><p>This means, that based on IPv4 usage the sizing would be: AWS>Azure>GOOG. Which is a surprise for me, as i neverimagined that Azure would be &ldquo;bigger&rdquo; than Google core + GCP combined! Maybe Google is more heavy on IPv6 ?
+Using the same script, and modifying the filtering, we get:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>Number of GCP addresses: 716,893,011,031,475,100,600,762,368
 </span></span><span style=display:flex><span>Numer of GOOG addresses: 1,902,094,870,361,986,792,382,504,370,176
 </span></span><span style=display:flex><span>Total GOOG (Google backbone/services + GCP): 1,902,811,763,373,018,267,483,105,132,544
 </span></span><span style=display:flex><span>Total AWS addresses: 1,217,286,314,170,012,654,257,871,781,900
