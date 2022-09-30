@@ -123,7 +123,7 @@ aws_list = fetchAWS(f)
 azure_list = fetchAzure(f)
 ```
 
-So now, the subnets are on lists. But we want to know the total number of ip addresses on each subnet, so lets the ipaddress python module, specifically the num_address method for the IPvXNetwork classes.
+So now, the subnets are on lists. But we want to know the total number of ip addresses on each subnet, so lets use the ipaddress python module, specifically the num_address method for the IPv(4/6)Network classes.
 
 From the [documentation](https://docs.python.org/3/library/ipaddress.html)
 
@@ -189,9 +189,8 @@ Total Azure addresses: 60,135,143
  Total cloud: 227,473,883
  ```
 
- This means, that based on IPv4 usage the sizing would be: AWS>Azure>GOOG. Which is a surprise for me, as i never imagined that Azure would be "bigger" than Google core + GCP combined! Maybe Google is more heavy on IPv6 ?
-
- Talking about IPv6, what are the ipv6 numbers? using the same script, and modifying the filtering, we get:
+This means, that based on IPv4 usage the sizing would be: AWS>Azure>GOOG. Which is a surprise for me, as i neverimagined that Azure would be "bigger" than Google core + GCP combined! Maybe Google is more heavy on IPv6 ?
+Using the same script, and modifying the filtering, we get:
 
 ```
 Number of GCP addresses: 716,893,011,031,475,100,600,762,368
